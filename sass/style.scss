@@ -28,7 +28,7 @@ h1 {
     font-size: 2.5rem;
     letter-spacing: 2px;
     text-align: center;
-    margin: 0;
+    margin-bottom: 20px;
     color: #00916e;
 }
 
@@ -40,7 +40,7 @@ h1 {
 
     .calculadora {
         display: grid;
-        grid-template-columns: repeat(4, 75px);
+        grid-template-columns: repeat(4, 65px);
         grid-template-rows: 160px repeat(5, 75px);
         background-color: #00916e;
         padding: 15px;
@@ -90,6 +90,14 @@ h1 {
 
         button.col-2 {
             grid-column: span 2;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .container {
+        .calculadora {
+            grid-template-columns: repeat(4, 75px);
         }
     }
 }

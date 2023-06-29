@@ -29,7 +29,7 @@ h1 {
   font-size: 2.5rem;
   letter-spacing: 2px;
   text-align: center;
-  margin: 0;
+  margin-bottom: 20px;
   color: #00916e;
 }
 
@@ -48,8 +48,8 @@ h1 {
 .container .calculadora {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (75px)[4];
-  grid-template-columns: repeat(4, 75px);
+  -ms-grid-columns: (65px)[4];
+  grid-template-columns: repeat(4, 65px);
   -ms-grid-rows: 160px (75px)[5];
   grid-template-rows: 160px repeat(5, 75px);
   background-color: #00916e;
@@ -205,4 +205,11 @@ h1 {
 .container .calculadora button.col-2 {
   -ms-grid-column-span: 2;
   grid-column: span 2;
+}
+
+@media (min-width: 500px) {
+  .container .calculadora {
+    -ms-grid-columns: (75px)[4];
+    grid-template-columns: repeat(4, 75px);
+  }
 }
