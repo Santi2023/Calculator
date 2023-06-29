@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Calculadora
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap")
+        link(rel="stylesheet", href="../css/style.css")
+        script(src="../js/Calculadora.js" type="text/javascript")
+        script(src="../js/index.js" type="text/javascript" defer)
+        script(src="../js/Display.js" type="text/javascript")
+    body 
+        main 
+            .social 
+                p 
+                    a(href="https://instagram.com/dev__santiago" target="blank") Instagram 
+                    a(href="https://twitter.com/Dev_Santiagomc" target="blank") Twitter 
+                    a(href="https://github.com/Santi2023" target="blank") Github 
+            h1 Dev. Santiago
+            .container 
+                .calculadora 
+                    .display 
+                        #valor-anterior
+                        #valor-actual
+                    button.col-2(onclick="display.borrarTodo()") C
+                    button(onclick="display.borrar()") &larr;
+                    button.operador(value="dividir") %
+                    button.numero 7
+                    button.numero 8
+                    button.numero 9
+                    button.operador(value="multiplicar") x
+                    button.numero 4
+                    button.numero 5
+                    button.numero 6
+                    button.operador(value="restar") -
+                    button.numero 1
+                    button.numero 2
+                    button.numero 3
+                    button.operador(value="sumar") +
+                    button.col-2.numero 0
+                    button.numero .
+                    button.operador(value="igual") =
